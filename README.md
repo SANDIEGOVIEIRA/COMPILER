@@ -165,3 +165,7 @@ python main.py teste_full.src
 ## Todos os testes foram validados com saídas esperadas e estão documentados na apresentação PDF.
 
 ---
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Status](https://img.shields.io/badge/status-final-green)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
