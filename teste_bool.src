@@ -1,0 +1,5 @@
+y := true
+z := !y
+if (!z || y) {
+  z := false
+}

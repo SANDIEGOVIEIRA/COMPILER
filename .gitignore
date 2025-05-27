@@ -1,0 +1,29 @@
+# Arquivos Python compilados
+__pycache__/
+*.pyc
+*.pyo
+
+# Arquivo gerado automaticamente pela PLY
+parsetab.py
+parser.out
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.swp
+
+# Arquivos de backup
+*~
+
+# Ambientes virtuais (se houver)
+venv/
+.env/
+
+# IDEs e editores
+.vscode/
+.idea/
+*.code-workspace
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db

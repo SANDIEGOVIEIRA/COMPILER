@@ -1,0 +1,6 @@
+y := true
+z := false
+w := !y
+if (!z && w) {
+    z := true
+}
