@@ -172,6 +172,6 @@ Isso executará todos os testes `.src` na pasta `/testes`, incluindo análise l�
 
 ---
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
-![Status](https://img.shields.io/badge/status-final-green)
+![Status](https://img.shields.io/badge/status-ok-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
