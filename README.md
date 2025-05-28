@@ -2,12 +2,12 @@
 
 Este projeto implementa um compilador simples em Python, usando a biblioteca **PLY (Python Lex-Yacc)**, capaz de realizar:
 
-- ✅ Análise Léxica
-- ✅ Análise Sintática
-- ✅ Análise Semântica
-- ✅ Construção de AST
-- ✅ Detecção de tokens inválidos
-- ✅ Suporte a estruturas `if`, `while`, `for` e funções
+- :white_check_mark: Análise Léxica
+- :white_check_mark: Análise Sintática
+- :white_check_mark: Análise Semântica
+- :white_check_mark: Construção de AST
+- :white_check_mark: Detecção de tokens inválidos
+- :white_check_mark: Suporte a estruturas `if`, `while`, `for` e funções
 
 ---
 
@@ -24,7 +24,7 @@ pip install ply
 
 ---
 
-## ▶️ Como Executar o Compilador
+## :arrow_forward: Como Executar o Compilador
 
 O compilador principal é executado pelo arquivo `main.py`, que recebe um arquivo `.src` como entrada.
 
