@@ -38,12 +38,12 @@ python main.py testes/nome_do_arquivo.src
 
 ```
 compiler/
-├── main.py              # Arquivo principal do compilador
-├── lexer.py             # Analisador léxico (tokens)
-├── parser.py            # Analisador sintático (gramática + AST)
-├── semantic.py          # Analisador semântico (verificação de tipos, escopo)
-├── ast_nodes.py         # Definição dos nós da AST
-├── parsetab.py          # Gerado automaticamente pela PLY
+├── main.py               # Arquivo principal do compilador
+├── lexer.py              # Analisador léxico (tokens)
+├── parser.py             # Analisador sintático (gramática + AST)
+├── semantic.py           # Analisador semântico (verificação de tipos, escopo)
+├── ast_nodes.py          # Definição dos nós da AST
+├── parsetab.py           # Gerado automaticamente pela PLY
 ├── testes/
 │   ├── teste_lex.src
 │   ├── teste_bool.src
@@ -53,6 +53,7 @@ compiler/
 │   ├── teste_for.src
 │   ├── teste_semantica.src
 │   ├── teste_erro_semantica.src
+│   └── teste_full.src
 ```
 
 ---
@@ -149,7 +150,24 @@ python main.py testes/teste_for.src
 🎯 Loop de 1 a 5 somando valores em `sum`
 
 ---
+### 🔚 Teste Completo – for, função e if
 
+```bash
+python main.py testes/teste_full.src
+```
+
+🎯 Executa múltiplas estruturas de forma encadeada
+⚠️ Inclui propositalmente um token inválido % para testar erros
+
+---
+### 🧪 Executar todos os testes de uma vez:
+
+```bash
+python run_all_tests.py
+```
+Isso executará todos os testes `.src` na pasta `/testes`, incluindo análise léxica, sintática e semântica.
+
+---
 ## Todos os testes foram validados com saídas esperadas e estão documentados na apresentação PDF.
 
 ---
