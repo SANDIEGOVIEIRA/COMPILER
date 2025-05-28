@@ -44,6 +44,7 @@ compiler/
 ├── semantic.py           # Analisador semântico (verificação de tipos, escopo)
 ├── ast_nodes.py          # Definição dos nós da AST
 ├── parsetab.py           # Gerado automaticamente pela PLY
+├── run_all_tests.py      # Script para execução de todos os testes
 ├── testes/
 │   ├── teste_lex.src
 │   ├── teste_bool.src
