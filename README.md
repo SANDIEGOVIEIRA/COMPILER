@@ -29,7 +29,7 @@ pip install ply
 O compilador principal é executado pelo arquivo `main.py`, que recebe um arquivo `.src` como entrada.
 
 ```bash
-python main.py nome_do_arquivo.src
+python main.py testes/nome_do_arquivo.src
 ```
 
 ---
@@ -53,7 +53,6 @@ compiler/
 │   ├── teste_for.src
 │   ├── teste_semantica.src
 │   ├── teste_erro_semantica.src
-│   └── teste_full.src
 ```
 
 ---
@@ -63,7 +62,7 @@ compiler/
 ### 1. 🔍 **Teste Léxico – Tokens Inválidos**
 
 ```bash
-python -c "import lexer; data=open('teste_lex.src').read(); lexer.lexer.input(data); [tok for tok in lexer.lexer]; print(lexer.lexer.invalid_tokens)"
+python -c "import lexer; data=open('testes/teste_lex.src').read(); lexer.lexer.input(data); [tok for tok in lexer.lexer]; print(lexer.lexer.invalid_tokens)"
 ```
 
 📄 Entrada: `teste_lex.src`
@@ -84,7 +83,7 @@ python lexer.py
 ### 3. 🌳 **Análise Sintática com AST**
 
 ```bash
-python main.py teste_ast.src
+python main.py testes/teste_ast.src
 ```
 
 🎯 Gera árvore sintática com `for` e atribuições encadeadas
@@ -94,7 +93,7 @@ python main.py teste_ast.src
 ### 4. 🧠 **Análise Semântica – Condicional e Laço**
 
 ```bash
-python main.py teste_semantica.src
+python main.py testes/teste_semantica.src
 ```
 
 🎯 Verifica uso correto de tipos e escopo com `if`, `else` e `while`
@@ -104,7 +103,7 @@ python main.py teste_semantica.src
 ### 5. ❌ **Erro Semântico – Variável sem Tipo**
 
 ```bash
-python main.py teste_erro_semantica.src
+python main.py testes/teste_erro_semantica.src
 ```
 
 🎯 Detecta erro ao usar uma variável (`sum`) antes de definição de tipo
@@ -114,7 +113,7 @@ python main.py teste_erro_semantica.src
 ### 6. 🧪 **Booleanos e Operadores Lógicos**
 
 ```bash
-python main.py teste_bool.src
+python main.py testes/teste_bool.src
 ```
 
 🎯 Usa `true`, `false`, `!`, `||` em condição `if`
@@ -124,7 +123,7 @@ python main.py teste_bool.src
 ### 7. ❕ **Negação com `!` e `&&`**
 
 ```bash
-python main.py teste_not.src
+python main.py testes/teste_not.src
 ```
 
 🎯 Testa combinação de operadores lógicos com negados
@@ -134,7 +133,7 @@ python main.py teste_not.src
 ### 8. 📦 **Declaração de Função**
 
 ```bash
-python main.py teste_func.src
+python main.py testes/teste_func.src
 ```
 
 🎯 Verifica função `add(a, b)` com retorno
@@ -144,21 +143,10 @@ python main.py teste_func.src
 ### 9. 🔁 **Laço `for` com Acumulação**
 
 ```bash
-python main.py teste_for.src
+python main.py testes/teste_for.src
 ```
 
 🎯 Loop de 1 a 5 somando valores em `sum`
-
----
-
-### 🔚 **Teste Completo – `for`, função e if**
-
-```bash
-python main.py teste_full.src
-```
-
-🎯 Executa múltiplas estruturas de forma encadeada
-⚠️ Inclui propositalmente um token inválido `%` para testar erros
 
 ---
 
